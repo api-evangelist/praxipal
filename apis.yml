@@ -1,8 +1,28 @@
 aid: praxipal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/praxipal.png
 name: PraxiPal
-description: 'PraxiPal is a company surfaced as a portfolio company of hv-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare; ai-enterprise-software. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  PraxiPal GmbH (Berlin, Germany) builds Luna, an AI voice receptionist for
+  medical, dental, therapeutic, and veterinary practices. Luna answers incoming
+  phone calls 24/7, handles patient questions, books and reschedules
+  appointments, and processes prescription requests autonomously, integrating
+  directly with 40+ German practice-management systems (PVS) such as CGM
+  MEDISTAR, tomedo, charly by solutio, DAMPSOFT, and DENSoffice. It operates in
+  a GDPR-compliant manner on European servers with medical-confidentiality
+  safeguards under German law. PraxiPal is backed by HV Capital. No public API,
+  developer portal, or SDK is currently published; this profile tracks the
+  company as an API Evangelist network lead.
 url: https://raw.githubusercontent.com/api-evangelist/praxipal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +32,33 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Healthcare; Ai Enterprise Software
+- Healthcare
+- Artificial Intelligence
+- Voice AI
+- Conversational AI
+- Medical Practice Management
+- Appointment Scheduling
+- Germany
 apis: []
+common:
+- type: DomainSecurity
+  url: security/praxipal-domain-security.yml
+- type: Website
+  url: https://praxipal.com
+- type: PrivacyPolicy
+  url: https://praxipal.com/datenschutz
+- type: Support
+  url: https://praxipal.com/kontakt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
